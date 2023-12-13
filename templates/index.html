@@ -1,0 +1,16 @@
+<h1> Hello World </h1>
+
+<p> This is my first web page </p>
+
+<p> Isn't this Cool, {{username|upper}}</p>
+
+<p>Experimenting with tags and jinja filters, {{stuff|safe}}</p>
+
+<h3> List of Favourite things:</h3>
+{% for item in list_of_favourites %}
+	{% if item == 90 %}
+		<li>{{ item + 100}}</li>
+	{% else %}
+	<li> {{item}}</li>
+	{% endif %}
+{% endfor %}
